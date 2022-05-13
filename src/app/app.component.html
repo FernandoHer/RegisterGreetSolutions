@@ -1,4 +1,4 @@
-
+<app-pdf></app-pdf>
 <form   [formGroup]="miFormulario"
   class="login100-form"
   (submit)="register()" 
@@ -59,23 +59,7 @@
   >
 
   </ngx-qrcode>
-  <h3>www.youtube.com</h3>
-</div>
-
-<hr>
-
-<hr>
-
-<div>
-  <ngx-qrcode 
-  [elementType]= "elementType"
-  [value]= "values"
-  [errorCorrectionLevel]="errorCorrectionLevel"
->
-  >
-
-  </ngx-qrcode>
-  <h3>www.youtube.com</h3>
+  <h3>{{values}}</h3>
 </div>
 
 <hr>

@@ -15,7 +15,7 @@ import { AuthService } from 'src/app/services/auth.services';
 
 export class  AppComponent  {
   
-  url= "Adcerlñ8967hkh";
+  url= "Adcerlñ8967hkhcls";
   elementType = NgxQrcodeElementTypes.URL;
   errorCorrectionLevel = NgxQrcodeErrorCorrectionLevels.HIGH;
   values= this.url;
