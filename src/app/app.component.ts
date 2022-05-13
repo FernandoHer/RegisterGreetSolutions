@@ -1,15 +1,24 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { NgxQrcodeElementTypes, NgxQrcodeErrorCorrectionLevels } from '@techiediaries/ngx-qrcode';
 import { AuthService } from 'src/app/services/auth.services';
 // import Swal from 'sweetalert2';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 
+
+
 export class  AppComponent  {
+  
+  url= "Adcerlñ8967hkh";
+  elementType = NgxQrcodeElementTypes.URL;
+  errorCorrectionLevel = NgxQrcodeErrorCorrectionLevels.HIGH;
+  values= this.url;
 
   miFormulario: FormGroup = this.fb.group({
     name: ['Juan Perez',[Validators.required, Validators.minLength(6)]],
