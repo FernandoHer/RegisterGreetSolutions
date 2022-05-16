@@ -11,10 +11,19 @@ pdfMake.vfs = pdfFonts.pdfMake.vfs;
 })
 export class PdfComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    document.addEventListener("click", (e)=> {
+
+      const dataImage = e.target ;
+      const dImage = (dataImage).removeEventListener ;
+
+      console.log("dataImage:", dataImage, "dImage", dImage )
+    }) }
 
   ngOnInit(): void {
   }
+
+  
 
   createPdf(){
     const pdfDefinition: any = {
